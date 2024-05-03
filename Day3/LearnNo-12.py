@@ -194,9 +194,56 @@ print(thislist)
 
 
 
+#============================= ลบ
+# The remove() method removes the specified item.
+#=============================
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+# Output ได้ ['apple', 'cherry']
 
-# Tuple unpacking
 
-# Set
+#--------------------- 
+Remove the first occurance of "banana":
+#--------------------- 
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+# Output ได้ ['apple', 'cherry', 'banana', 'kiwi']
 
-#Dictionary 
+#--------------------- 
+The pop() method removes the specified index.
+#--------------------- 
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+# Output ได้  ['apple', 'cherry']
+
+
+#--------------------- 
+Remove the first item:
+#--------------------- 
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist) 
+# Output ได้ ['banana', 'cherry']
+
+
+#--------------------- 
+The del keyword can also delete the list completely. !!!!!!!!!!
+#--------------------- 
+thislist = ["apple", "banana", "cherry"]
+del thislist
+print(thislist) #this will cause an error because you have succsesfully deleted "thislist".
+
+thislist = ["apple", "banana", "cherry"]
+del thislist #ยังรันไม่ผ่าน
+
+#--------------------- 
+The clear() method empties the list.
+The list still remains, but it has no content.
+#--------------------- 
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)  
+# Output ได้   []
