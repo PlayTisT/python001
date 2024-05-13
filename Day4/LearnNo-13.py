@@ -92,11 +92,37 @@ print(shopitem)
 ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon']
 ['apple', 'water melon', 'banana', 'cherry', 'orange', 'kiwi', 'melon']
 
-#----------------------------- List = List
+
+#----------------------------- # Copy Lists 
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+# Output ออกมาเป็นค่า ดังนี้  ['apple', 'banana', 'cherry']
+
+#----------- -----------------หรือ copy is to use the built-in method list()
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+# Output ออกมาเป็นค่า ดังนี้   ['egg', 'milk', 'banana', 'orange']
+
+
+#----------------------------- # Join Lists
+#----------------------------- items1+items2
 items1 = ['egg', 'milk']
 items2 = ['banana', 'orange']
 print(items1+items2)
+
 # Output ออกมาเป็นค่า ดังนี้  ['egg', 'milk', 'banana', 'orange']
 
+#--------------------------- ex2 list1 + list2
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
 
-# Copy Lists   # Join Lists
+list3 = list1 + list2
+print(list3)
+# Output ออกมาเป็นค่า ดังนี้ ['a', 'b', 'c', 1, 2, 3]
+#-----------------------------
+
+
