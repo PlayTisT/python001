@@ -166,6 +166,16 @@ thislist.append("orange")
 print(thislist)
 # Output ได้  ['apple', 'banana', 'cherry', 'orange']
 
+#------ex--------------- 
+datasave = []
+datasave.append("Mr.Kim")
+datasave.append(hod)
+data.append(True)
+#show result
+print(datasave)  
+# Output ได้ผล Oคือ ['Mr.Kim', hod, True]
+
+
 #--------------------- 
 Insert an item as the second position:
 #--------------------- 
