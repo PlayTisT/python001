@@ -256,4 +256,22 @@ The list still remains, but it has no content.
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)  
-# Output ได้   []
+# Output ได้ แสดงผล  []  พอกดดรอปดาว  [.. 0 Items ..]
+
+
+
+#---------------ex---------------
+people = ["The One", "The Two", "The Three"]
+#show result
+print(people[0])
+print(people[1])
+print(people[2])
+print(people[-1])
+print(people[-2])
+
+# Output ได้ 
+The One
+The Two
+The Three
+The Three
+The Two
