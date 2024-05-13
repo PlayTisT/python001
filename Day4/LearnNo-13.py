@@ -72,11 +72,31 @@ print(people)
 # Output ออกมาเป็นค่า ดังนี้   ['Takkie', 'Paarena', 'Carl', 'Bob', 'Alice']
 #-----------------------------
 
+# Remove last item in list
+
+shopitem = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(shopitem)
+shopitem.pop() # เอาหลังสุดออก
+print(shopitem)
+shopitem.append("Snake")
+print(shopitem)
+shopitem.remove("Snake") #ลบเฉพาะเลยถ้าเจอตัวแลก
+print(shopitem)
+shopitem.insert(1, "water melon")
+print(shopitem)
+
+# Output ออกมาเป็นค่า ดังนี้ 
+['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango']
+['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon']
+['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'Snake']
+['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon']
+['apple', 'water melon', 'banana', 'cherry', 'orange', 'kiwi', 'melon']
+
+#----------------------------- List = List
+items1 = ['egg', 'milk']
+items2 = ['banana', 'orange']
+print(items1+items2)
+# Output ออกมาเป็นค่า ดังนี้  ['egg', 'milk', 'banana', 'orange']
 
 
-
-
-
-
-# Copy Lists
-# Join Lists
+# Copy Lists   # Join Lists
