@@ -11,8 +11,9 @@ tup_items
  # ทีนี้เราลองเพิ่ม item เปลี่ยนตำแหน่ง 0 เข้าไป 
  tup_items[0] = 'sprite' #มันจะ error ไม่ assignment เข้าไปได้
  
- # ลองพอกด  tup_items.  ดอท  จะมีแค่ 2 เพราะมันเปลี่ยนค่าไม่ได้  มี count  and index
+ # ลองพอกด  tup_items.  ดอท  จะมีแค่ 2  (count  and index ) เพราะมันเปลี่ยนค่าไม่ได้ 
  
  เช่น  tup_items = ('egg', 'bread', 'bread', 'coke', 'coke',)
  tup_item.count('bread')
-#Output ออกมา แค่    32  
+
+#Output ออกมา แค่ค่าเท่ากับ   2
