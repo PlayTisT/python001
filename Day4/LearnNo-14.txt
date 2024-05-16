@@ -104,6 +104,7 @@ course.get("Replay") #ใส่ผิด R ใหญ่ จะไม่ทำอ
 course.get("replay") #ใส่ถูก Output แสดงค่าที่ดึงมาแสดง ก็คือ False 
 
 
-
+#=====================================
 # list, dictionary เป็น mutable
 # tuple, string เป็น immutable
+# usecase มีค่าเยอะๆ ก็จะใช้ set เพื่อ convert list หรือ tuple 
