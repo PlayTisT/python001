@@ -6,7 +6,7 @@
 tup_items = ('egg', 'bread', 'coke')
 tup_items
 
-#จะแสดงเป็น ('egg', 'bread', 'coke')
+# Output จะแสดงเป็น ('egg', 'bread', 'coke')
 
  # ทีนี้เราลองเพิ่ม item เปลี่ยนตำแหน่ง 0 เข้าไป 
  tup_items[0] = 'sprite' #มันจะ error ไม่ assignment เข้าไปได้
@@ -16,4 +16,36 @@ tup_items
  เช่น  tup_items = ('egg', 'bread', 'bread', 'coke', 'coke',)
  tup_item.count('bread')
 
-#Output ออกมา แค่ค่าเท่ากับ   2
+# Output ออกมา แค่ค่าเท่ากับ   2
+
+#---------------------------------------
+#username password
+#student1, student2
+
+s1 = ("id001", "123456")
+s2 = ("id002", "654321")
+#ประกาศ tuple ขึ้นมา แล้ว ปริ้นต์  // เหมือนประกาศมา แต่แก่ไขไม่ได้ เก็บใน DB แต่ไม่สามารถอัพเดทได้ 
+user_pw = (s1, s2)
+print(user_pw)
+# Output จะแสดงเป็น (('id001', '123456'), ('id002', '654321'))
+#---------------------------------------
+
+# tuple  unpacking 2 ตัวแปร กระจ่ายวิ่งไปเก็บที่ตัวแปลที่ประกาศ   (ใช้โค๊ดต่อเนื่องจากด้านบน)
+username, password = s1
+print(username, password)
+id001 123456
+# ตย tuple  unpacking 3 ตัวแปร 
+name, age, gpa = ("Karn", 35, 2.86)
+print(name, age)  # ลองใส่เรียก 2 ตัวแปร  # Output จะ error ไม่ออก
+# จึงใช้วิธีแก้  gpa เป็น  _  ไว้ก่อน ตามด้านล่าง ----------
+name, age, _ = ("Karn", 35, 2.86)
+print(name, age)    # Output จะออกเป็น Karn 35 
+
+
+
+
+
+
+
+
+
