@@ -1,0 +1,18 @@
+#=============================
+# Tuple เหมือน list แต่เป็น () is immutable 
+#  เพิ่มอะไรเข้าไปในนั้นไม่ได้
+#=============================
+
+tup_items = ('egg', 'bread', 'coke')
+tup_items
+
+#จะแสดงเป็น ('egg', 'bread', 'coke')
+
+ # ทีนี้เราลองเพิ่ม item เปลี่ยนตำแหน่ง 0 เข้าไป 
+ tup_items[0] = 'sprite' #มันจะ error ไม่ assignment เข้าไปได้
+ 
+ # ลองพอกด  tup_items.  ดอท  จะมีแค่ 2 เพราะมันเปลี่ยนค่าไม่ได้  มี count  and index
+ 
+ เช่น  tup_items = ('egg', 'bread', 'bread', 'coke', 'coke',)
+ tup_item.count('bread')
+#Output ออกมา แค่    32  
