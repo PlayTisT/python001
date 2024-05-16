@@ -57,7 +57,33 @@ set(pet)
 
 
 
+#==========================================================
+# dictionary  key : Value pairs   ซ้ายมือ Key  ขวา จะเป็น Value    โดยที่ Key (ต้องเป็น immutable )  
+#  เพิ่มอะไรเข้าไปในนั้นไม่ได้
+#==========================================================
+course = {
+          "name" : "Data sci class",
+          "duration" : "4 months", #ตัวอักษร
+	      "students": 200,   # ใช้ 200
+	      "replay" : True,
+          "skills" : ["SQL", "R", "Stats", "Dashbroad"]
+		}
+course
+#ถ้าจะเพิ่ม บรรทัด ที่ O/P ออกมาให้ใส่  สร้างkey ใหม่เพิ่มเข้าไป 
 
+course["start_time"] = "9am"  # Output start time จะไปต่อล่างสุดในการแสดงผล
+course["language"] = "Thai"   # Output language จะไปต่อล่างสุดในการแสดงผล
+#ถ้าจะลบใช้
+del course["language"]
+del course["start_time"]
+
+course["replay"] = True  #หรือเปลี่ยน True > False อัพเดตค่า 
+#ตัวอย่างจะกลายเป็นว่า อัพเดตค่าได้ จะเป็น mutable
+
+#ดึง มาแสดงแค่ 3 ดู 
+couse["skills"][0:2] # Output ออกมาเป็น  ['SQL', 'R', 'Stats']
+couse["skills"][-2:] # Output ออกมาเป็น  ['R', 'Stats', 'Dashbroad']
+ 
 
 
 
